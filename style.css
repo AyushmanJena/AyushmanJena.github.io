@@ -73,7 +73,7 @@ body{
 
 .section-1 .text {
 /*	background-color: lightskyblue;*/
-	padding: 8% 5% 10% 0%;
+	padding: 8% 5% 10% 5%;
 	width: 400px;
 	display: flex;
 	flex-direction: column;
@@ -153,7 +153,6 @@ body{
 
 .skill-card {
 	width : 400px;
-	height : 150px;
 /*	background-color: lightpink;*/
 	border-radius: 10px;
 	margin: 30px 5px 30px 5px;
