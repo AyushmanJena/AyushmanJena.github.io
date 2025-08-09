@@ -2,7 +2,7 @@ body{
 	background-color: lightseagreen;
 	font-family: "Inter";
 	color: white;
-
+	margin: 0;
 	background-color: #e5e5f7;
 	opacity: 1;
 	background-image: linear-gradient(#262652 1px, transparent 1px), linear-gradient(to right, #262652 1px, #0e0e1c 1px);
@@ -42,13 +42,15 @@ body{
 	flex-direction: row;
 	justify-content: center;
 	flex-wrap: wrap;
+	align-items: flex-start;
+	min-height: 100vh;
 }
 
 .id-card{
 	display: flex;
 	flex-direction: column;
 	width: 300px;
-	background-color: lightcyan;
+	background-color: #e6f7ff;
 	margin: 10% 5% 10% 5%;
 	align-items: flex-start;
 	color: black;
@@ -229,6 +231,7 @@ body{
 /*	background-color: lightyellow;*/
 	align-items: center;
 	margin : 100px 0px 100px 0px;
+/*	padding-bottom: 100px;*/
 }
 
 .project-card {
@@ -238,7 +241,9 @@ body{
 /*	background-color: blue;*/
 	margin: 40px;
 	width: 75%;
+	max-width: 1400px;
 	justify-content: space-between;
+	align-items: flex-start;
 	background-color: #040112;
 	border-radius: 13px;
 
@@ -254,7 +259,9 @@ body{
 /*	background-color: blue;*/
 	margin: 40px;
 	width: 75%;
+	max-width: 1400px;
 	justify-content: space-between;
+	align-items: flex-start;
 		background-color: #040112;
 	border-radius: 13px;
 
@@ -264,11 +271,13 @@ body{
 }
 
 
+
 .project-text{
-	margin: 10px 10px 0px 20px;
+	margin: 10px 20px 0px 20px;
 	display: flex;
 	flex-direction: column;
 	width: 450px;
+/*	align-items: flex-start;*/
 	text-align: justify;
   text-justify: inter-word;
 }
@@ -285,4 +294,77 @@ body{
 .project-screenshot img{
 	width: 100%;
 	border-radius: 6px;
+}
+
+footer{
+	height : 50px;
+	display : flex;
+	align-items: center;
+	justify-content: center;
+}
+footer .text{
+	font-size : 12px;
+	margin : 0 auto;
+
+}
+
+.section-4{
+/*	background-color: red;*/
+	display : flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.mini-projects-card-container{
+	height : 500px;
+	width : 60%;
+	max-width: 1200px;
+/*	background-color: lawngreen;*/
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+	
+	animation: appear linear;
+	animation-timeline: view();
+	animation-range: entry 0% cover 40%;
+}
+
+.mini-project-card-1{
+	background-color: white;
+	border-radius: 12px;
+	width : 280px;
+	height: 150px;
+	background: linear-gradient(to top left, #633266,#3c203d,#190d1a, black, black);
+/*	color: blue;*/
+	padding: 20px;
+	margin : 20px;
+}
+
+.mini-project-card-2{
+	background-color: white;
+	border-radius: 12px;
+	width : 280px;
+	height: 150px;
+	background: linear-gradient(to top left, #5a5f94,#34385e,#17192b, black, black);
+/*	color: blue;*/
+	padding: 20px;
+	margin : 20px;
+}
+
+.mini-project-card-image{
+	width: 30px;
+	height: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
