@@ -171,7 +171,7 @@ body{
 	
 	animation: appear linear;
 	animation-timeline: view();
-	animation-range: entry 0% cover 40%;
+	animation-range: entry 0% cover 20%;
 }
 
 .skills-group{
@@ -196,7 +196,7 @@ body{
 
   animation: appear linear;
 	animation-timeline: view();
-	animation-range: entry 0% cover 40%;
+	animation-range: entry 0% cover 20%;
 }
 
 .skill-title{
@@ -249,7 +249,7 @@ body{
 
 	animation: appear linear;
 	animation-timeline: view();
-	animation-range: entry 0% cover 40%;
+	animation-range: entry 0% cover 20%;
 }
 
 .project-card-inv {
@@ -267,7 +267,7 @@ body{
 
 	animation: appear linear;
 	animation-timeline: view();
-	animation-range: entry 0% cover 40%;
+	animation-range: entry 0% cover 20%;
 }
 
 
@@ -296,17 +296,7 @@ body{
 	border-radius: 6px;
 }
 
-footer{
-	height : 50px;
-	display : flex;
-	align-items: center;
-	justify-content: center;
-}
-footer .text{
-	font-size : 12px;
-	margin : 0 auto;
 
-}
 
 .section-4{
 /*	background-color: red;*/
@@ -326,10 +316,11 @@ footer .text{
 	flex-direction: row;
 	justify-content: center;
 	align-items: flex-start;
+	flex-wrap: wrap;
 	
-	animation: appear linear;
-	animation-timeline: view();
-	animation-range: entry 0% cover 40%;
+	
+
+
 }
 
 .mini-project-card-1{
@@ -341,6 +332,10 @@ footer .text{
 /*	color: blue;*/
 	padding: 20px;
 	margin : 20px;
+
+	animation: appear linear;
+	animation-timeline: view();
+	animation-range: entry 0% cover 20%;
 }
 
 .mini-project-card-2{
@@ -352,6 +347,10 @@ footer .text{
 /*	color: blue;*/
 	padding: 20px;
 	margin : 20px;
+
+	animation: appear linear;
+	animation-timeline: view();
+	animation-range: entry 0% cover 20%;
 }
 
 .mini-project-card-image{
@@ -367,4 +366,17 @@ a {
 a:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease;
+}
+
+
+footer{
+	height : 50px;
+	display : flex;
+	align-items: center;
+	justify-content: center;
+}
+footer .text{
+	font-size : 12px;
+	margin : 0 auto;
+
 }
