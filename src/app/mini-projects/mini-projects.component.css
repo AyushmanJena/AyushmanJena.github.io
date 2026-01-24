@@ -1,0 +1,41 @@
+.card-glow {
+  display: inline-block;
+  border-radius: 16px;
+  position: relative;
+  cursor: pointer;
+  --glow-color: #4fd1c5; /* fallback */
+}
+
+.card-glow::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background-color: var(--glow-color);
+  filter: blur(10px);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 0;
+}
+
+.card-glow:hover::before {
+  opacity: 1;
+}
+
+.gradient-card {
+  width: 300px;
+  height: 175px;
+  padding: 12px 16px;
+  border-radius: 16px;
+  background-color: #171717;
+  color: white;
+  position: relative;
+  z-index: 1;
+  border: 2px solid var(--glow-color);
+
+  transition: border-color 0.4s ease, background-color 0.4s ease;
+}
+
+.gradient-card:hover {
+  background-color: var(--card-bg);
+}

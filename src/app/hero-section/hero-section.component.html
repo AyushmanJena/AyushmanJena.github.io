@@ -1,0 +1,90 @@
+<div class="w-full min-h-[100dvh] flex flex-row flex-wrap justify-center items-center gap-30 py-28 text-white">
+    <div class=" flex flex-col items-start bg-[#EDEDED] w-[250px] md:w-[300px] h-[400px] md:h-[440px]">
+        <img src="/id-img.jpg" class="p-8">
+        <div class="px-8 pb-8 text-black">
+            <div class="kalam-regular">Ayushman Jena</div>
+            <div class="kalam-regular">21.</div>
+        </div>
+    </div>
+    <div class="md:w-[350px] w-full px-8 md:px-0">
+        <div>
+            <p class="hello md:text-3xl text-2xl font-bold">Hello!</p>
+            <p class="md:text-2xl text-xl font-bold">I'm a Full Stack Developer</p>
+
+            <div class="inline-flex rounded-full px-2.5 mt-2 flex-row justify-center items-center gap-3
+         border-2 bg-[#152e0d] border-green-300
+         shadow-[0_0_12px_rgba(74,222,128,0.35)]
+         transition-shadow duration-300">
+                <div class="w-3 h-3 rounded-full bg-[#7bf1a8]"></div>
+                <div class="my-1 mr-2">
+                    <p class="font-mono md:text-sm text-xs cursor-default">OPEN FOR REMOTE OPPORTUNITIES</p>
+                </div>
+            </div>
+
+            <div class="mt-5 mb-2 text-gray-300">
+                <p class="text-sm">from <span class="text-lg font-semibold">Bhubaneswar, India</span></p>
+            </div>
+
+
+            <p>Student and <strong>Full-Stack Developer</strong> with a genuine love for the craft of building. I'm fueled by curiosity and a constant hunger to learn more. Whether I'm tackling a complex problem or starting a fresh project, I'm always looking for the next thing to build and the next skill to master.
+            </p>
+        </div>
+
+        <!-- resume download button -->
+        <div class="my-8">
+          <a href="ayushman_resume.pdf" target="_blank" download>
+            <button class="glass-btn">
+              RESUME
+            </button>
+          </a>
+        </div>
+
+        <!-- social media buttons -->
+        <div class="flex gap-3">
+            <div *ngFor="let icon of socialIcons"
+                class="group relative icon-wrapper w-[45px] aspect-square rounded-full p-2 flex items-center justify-center transition-all duration-300 cursor-pointer"
+                (mouseenter)="icon.hovered = true" (mouseleave)="icon.hovered = false" (click)="navigateToUrl(icon.url)" [ngStyle]="{
+      'background-color': icon.hovered ? icon.bgHover : icon.bgColor,
+      'color': icon.hovered ? icon.bgColor : icon.svgColor,
+      '--glow-color': icon.bgColor
+    }" [class.icon-hovered]="icon.hovered">
+                <svg [attr.viewBox]="icon.viewBox" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    class="w-full h-full transition-all duration-300">
+                    <path *ngFor="let d of icon.paths" [attr.d]="d" stroke="currentColor"
+                        [attr.stroke-width]="SVG_STROKE_WIDTH" [attr.stroke-linecap]="SVG_LINECAP"
+                        [attr.stroke-linejoin]="SVG_LINEJOIN" />
+                </svg>
+
+                <div class="
+        absolute left-1/2 -top-2
+        -translate-x-1/2 -translate-y-full
+        opacity-0 scale-95
+        group-hover:opacity-100 group-hover:scale-100
+        transition-all duration-200 ease-out
+        pointer-events-none
+        z-50
+      ">
+
+                    <div class="
+          px-3 py-1.5
+          text-xs font-medium
+          rounded-lg
+          text-white
+          bg-[#0e0e1c]/90
+          backdrop-blur-md
+          border border-white/10
+          whitespace-nowrap
+          shadow-lg
+        ">
+
+                        {{ icon.title }}
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+</div>

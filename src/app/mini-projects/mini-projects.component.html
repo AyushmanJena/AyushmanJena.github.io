@@ -1,0 +1,29 @@
+<div class="mini-projects-container flex flex-col justify-center items-center pt-28 text-white my-36">
+    <p class="text-2xl font-bold mb-14">MINI PROJECTS</p>
+    <div class="flex flex-row flex-wrap justify-center gap-12 w-full">
+
+      <a class="card-glow"
+           *ngFor="let project of miniProjectList"
+           [style.--glow-color]="project.colorCode"
+         [style.--card-bg]="project.altColorCode"
+         [href]="project.liveUrl" target="_blank" rel="noopener noreferrer">
+
+        <div class="gradient-card">
+          <div class="icon w-8 h-8 mt-2 mb-4">
+            <div [innerHTML]="project.svgFile"></div>
+          </div>
+          <div>
+            <p class="title text-lg font-semibold">{{ project.title }}</p>
+            <p class="text-sm">{{ project.description }}</p>
+          </div>
+          <div class=" flex flex-row gap-2 flex-wrap my-2">
+            <div class="text-xs bg-[#696969]/30 text-[#BFBFBF] py-0.25 pb-0.75 px-2 rounded-sm" *ngFor="let tool of project.toolsUsed">
+              {{tool}}
+            </div>
+          </div>
+        </div>
+
+      </a>
+
+    </div>
+</div>

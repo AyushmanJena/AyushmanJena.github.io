@@ -1,0 +1,35 @@
+<div class="skills-container flex flex-col justify-center items-center gap-12 mt-24 pt-28 ">
+  <p class="text-2xl font-bold text-white">PROJECTS</p>
+  <div class="w-full text-white flex flex-col gap-16" >
+
+    <div class="flex flex-row  flex-wrap-reverse lg:justify-between justify-center   px-3 " *ngFor="let project of projectList">
+      <div class="md:w-[400px] px-2">
+        <p class="text-xl font-semibold my-3">{{project.title}}</p>
+        <p>{{project.description}}</p>
+        <div class=" flex flex-row gap-2 flex-wrap my-2">
+          <div class="text-xs bg-[#696969]/40 text-[#BFBFBF] py-0.25 pb-0.75 px-2 rounded-sm" *ngFor="let tool of project.toolsUsed">
+            {{tool}}
+          </div>
+        </div>
+        <div class="flex flex-row gap-3 my-3">
+          <a class="action-button bg-[#dcccec] text-black rounded-full px-6 py-1 flex justify-center items-center text-sm font-semibold"
+            style="--btn-color: #dcccec;" [href]="project.githubUrl" target="_blank" rel="noopener noreferrer">
+            <p class="mb-0.5">Github</p>
+          </a>
+
+<!--          <a class="action-button bg-[#aec9f1] text-black rounded-full px-6 py-1 flex justify-center items-center text-sm font-semibold"-->
+<!--            style="&#45;&#45;btn-color: #aec9f1;" [href]="project.liveUrl" target="_blank" rel="noopener noreferrer">-->
+<!--            <p class="mb-0.5">Live</p>-->
+<!--          </a>-->
+
+        </div>
+      </div>
+      <div class="w-[444px] h-full rounded-xl ">
+        <img [src]="project.imageUrl" class="rounded-xl h-full cursor-pointer" alt="Project screenshot" />
+      </div>
+
+    </div>
+
+
+  </div>
+</div>
