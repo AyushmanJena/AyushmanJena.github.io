@@ -46,7 +46,7 @@ export class SkillsComponent {
     {
       title: 'Additional Subjects',
       skills : [
-        {skill:'System Design', color: '#d0a1ff', description: 'Designing software systems, scalable architectures and componentinteractions' },
+        {skill:'System Design', color: '#d0a1ff', description: 'Designing software systems, scalable architectures and component interactions' },
         {skill:'Networking', color: '#484ABD', description: 'Basic networking concepts like HTTP, client-server communication and protocols' },
         {skill:'Operating Systems', color: '#99a1a6', description: 'Core OS concepts like processes, threads, memory and scheduling basics' },
         {skill:'OOPs', color: '#60A649', description: 'Practical use of Object Oriented principles while implementing application logic' },
