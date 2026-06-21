@@ -1,18 +1,9 @@
 <div class="homepage-container ">
   <div class="w-full lg:max-w-[900px] mx-auto ">
     <app-header></app-header>
-    <app-hero-section id="hero"></app-hero-section>
-
-    <div class="w-full flex flex-col items-center justify-center py-20 text-center">
-      <p class="md:text-2xl font-mono text-white">"Everything is Figureoutable"</p>
-    </div>
-
-    <app-skills id="skills"></app-skills>
-    <app-projects id="projects"></app-projects>
-    <app-mini-projects id="miniprojects"></app-mini-projects>
+    <!-- <app-homepage></app-homepage> -->
+    <router-outlet></router-outlet>
     <app-footer></app-footer>
-
-<!--    // to fix the header blocking the title of the section, give bottom margin from the above component instead of current top margin/padding-->
 
   </div>
 

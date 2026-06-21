@@ -1,11 +1,13 @@
 .hello{
-		background: linear-gradient(to right, #ea5616, #f0702f, #fa8e50, #fd9f5f, #ea5616);
-		/*background: linear-gradient(to right, #a6a6a6, #838383, #434343, #676767, #a6a6a6);*/
-		background-size:200%;
+		background: linear-gradient(to right, #fad250, #f0702f, #fad250, #fd9f5f, #fad250);
+		/* background: linear-gradient(to right, #a6a6a6, #838383, #434343, #676767, #a6a6a6); */
+		/* background: linear-gradient(to right, #edff9f, #6fffc3, #66a9f5, #dcff42); */
+
+    background-size:200%;
 		background-clip: text;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
-		animation: animate-gradient 5s linear infinite;
+		animation: animate-gradient 8s linear infinite;
 }
 
 @keyframes animate-gradient{

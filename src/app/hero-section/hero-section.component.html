@@ -9,7 +9,7 @@
     <div class="md:w-[350px] w-full px-8 md:px-0">
         <div>
             <p class="hello md:text-3xl text-2xl font-bold">Hello!</p>
-            <p class="md:text-2xl text-xl font-bold">I'm a Full Stack Developer</p>
+            <p class="md:text-2xl text-xl font-bold">I'm a Full-Stack Developer</p>
 
             <div class="inline-flex rounded-full px-2.5 mt-2 flex-row justify-center items-center gap-3
          border-2 bg-[#152e0d] border-green-300
@@ -17,7 +17,8 @@
          transition-shadow duration-300">
                 <div class="w-3 h-3 rounded-full bg-[#7bf1a8]"></div>
                 <div class="my-1 mr-2">
-                    <p class="font-mono md:text-sm text-xs cursor-default text-[#7bf1a8]">OPEN FOR REMOTE OPPORTUNITIES</p>
+                    <p class="font-mono md:text-sm text-xs cursor-default text-[#7bf1a8]">OPEN FOR REMOTE OPPORTUNITIES
+                    </p>
                 </div>
             </div>
 
@@ -26,24 +27,27 @@
             </div>
 
 
-            <p>Student and <strong>Full-Stack Developer</strong> with a genuine love for the craft of building. I'm fueled by curiosity and a constant hunger to learn more. Whether I'm tackling a complex problem or starting a fresh project, I'm always looking for the next thing to build and the next skill to master.
+            <p><strong>Student</strong> and <strong>Developer</strong> with a genuine love for the craft of building. I'm
+                fueled by curiosity and a constant hunger to learn more. Whether I'm tackling a complex problem or
+                starting a fresh project, I'm always looking for the next thing to build and the next skill to master.
             </p>
         </div>
 
         <!-- resume download button -->
         <div class="my-8">
-          <a href="ayushman_resume.pdf" target="_blank" download>
-            <button class="glass-btn">
-              RESUME
-            </button>
-          </a>
+            <a href="ayushman_resume.pdf" target="_blank" download>
+                <button class="glass-btn">
+                    RESUME
+                </button>
+            </a>
         </div>
 
         <!-- social media buttons -->
         <div class="flex gap-3">
             <div *ngFor="let icon of socialIcons"
                 class="group relative icon-wrapper w-[45px] aspect-square rounded-full p-2 flex items-center justify-center transition-all duration-300 cursor-pointer"
-                (mouseenter)="icon.hovered = true" (mouseleave)="icon.hovered = false" (click)="navigateToUrl(icon.url)" [ngStyle]="{
+                (mouseenter)="icon.hovered = true" (mouseleave)="icon.hovered = false" (click)="navigateToUrl(icon.url)"
+                [ngStyle]="{
       'background-color': icon.hovered ? icon.bgHover : icon.bgColor,
       'color': icon.hovered ? icon.bgColor : icon.svgColor,
       '--glow-color': icon.bgColor

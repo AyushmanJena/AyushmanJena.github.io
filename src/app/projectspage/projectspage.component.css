@@ -1,0 +1,27 @@
+.action-button {
+  position: relative;
+  cursor: pointer;
+
+  background-color: var(--btn-color);
+  color: #000000;
+
+  border: 2px solid transparent;
+
+  transition:
+    background-color 0.35s ease,
+    color 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+/* Hover effect */
+.action-button:hover {
+  background-color: color-mix(in srgb, var(--btn-color) 20%, transparent);
+  border-color: var(--btn-color);
+  color: var(--btn-color);
+
+  /* subtle glow */
+  box-shadow:
+    0 0 0 0 var(--btn-color),
+    0 0 10px 2px color-mix(in srgb, var(--btn-color) 35%, transparent);
+}
