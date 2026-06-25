@@ -12,7 +12,7 @@
       <div class="flex flex-row flex-wrap gap-3 font-semibold text-[14px]">
         <div
           *ngFor="let skill of card.skills"
-          class=" relative group skill-chip px-6 py-1 text-sm md:text-base rounded-full border-2 border-[#3b3b3b]/80 text-white
+          class="no-select relative group skill-chip px-6 py-1 text-sm md:text-base rounded-full border-2 border-[#3b3b3b]/80 text-white
     bg-[#0A0A0A]/50 backdrop-blur-sm transition-all duration-300 ease-out overflow-visible cursor-default" [style.--skill-color]="skill.color" >
           {{ skill.skill }}
           <!-- Tooltip -->

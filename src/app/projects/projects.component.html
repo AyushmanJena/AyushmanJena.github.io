@@ -29,7 +29,7 @@
         </div>
       </div>
       <div class="w-[444px] h-full rounded-xl ">
-        <img [src]="project.imageUrl" class="rounded-xl h-full cursor-pointer" alt="Project screenshot" />
+        <img [src]="project.imageUrl[0]" class="rounded-xl h-full cursor-pointer" alt="Project screenshot" (click)="openGallery(project.imageUrl)"/>
       </div>
 
     </div>

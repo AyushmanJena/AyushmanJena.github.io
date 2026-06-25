@@ -1,5 +1,5 @@
 .hello{
-		background: linear-gradient(to right, #fad250, #f0702f, #fad250, #fd9f5f, #fad250);
+		background: linear-gradient(to right, #fad250, #f9b6ff, #f0702f, #fad250, #fd9f5f, #f9b6ff, #fad250);
 		/* background: linear-gradient(to right, #a6a6a6, #838383, #434343, #676767, #a6a6a6); */
 		/* background: linear-gradient(to right, #edff9f, #6fffc3, #66a9f5, #dcff42); */
 
@@ -7,7 +7,7 @@
 		background-clip: text;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
-		animation: animate-gradient 8s linear infinite;
+		animation: animate-gradient 14s linear infinite;
 }
 
 @keyframes animate-gradient{

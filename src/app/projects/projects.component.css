@@ -28,31 +28,32 @@
 
 
 .glass-btn {
-  /* 1. The Glass Effect Base */
   background: rgba(255, 255, 255, 0.03);
-  backdrop-filter: blur(10px);            /* The "Frosted" blur */
-  -webkit-backdrop-filter: blur(10px);    /* For Safari support */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border: 2px solid rgba(255, 255, 255, 0.44);
 
-  /* 2. Text & Layout */
-  color: rgb(255, 255, 255);
-  font-family: inherit; /* Uses your site's font */
+  color: white;
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   padding: 8px 24px;
   border-radius: 50px;
   cursor: pointer;
+
+  transition:
+    background-color 0.4s ease,
+    border-color 0.4s ease,
+    box-shadow 0.4s ease;
 }
 
-/* Hover State */
 .glass-btn:hover {
-  /* Brighter background tinted with your Resume Purple */
   background: rgb(86, 86, 86);
-  border-color: rgb(255, 255, 255);
+  border-color: white;
 
-  /* Lift effect */
-  /* transform: translateY(-1px); */
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.12);
+}
 
-  /* Trigger the breathing glow */
-  /* animation: glass-breathe 6s infinite ease-in-out; */
+.glass-btn:active {
+  transform: translateY(0);
 }
