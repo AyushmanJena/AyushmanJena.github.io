@@ -32,8 +32,7 @@ export class SkillsComponent {
         {skill:'MongoDB', color: '#00ed64', description: 'NoSQL database for flexible and simplified data storage' },
         {skill:'PostgreSQL', color: '#63c7f2', description: 'Relational database for storing and managing data' },
         {skill:'MySQL', color: '#5aa9e6', description: 'Relational database for storing and managing data' },
-        {skill:'Docker', color: '#637ddb', description: 'Containerization platform for building, deploying and running applications consistently' },
-        {skill:'Tailwind', color: '#00bcff', description: 'CSS framework for fast, responsive, modern UI design' },
+        {skill:'Tailwind CSS', color: '#00bcff', description: 'CSS framework for fast, responsive, modern UI design' },
       ]
     },
     {
@@ -43,6 +42,7 @@ export class SkillsComponent {
         {skill:'GitHub', color: '#d0a1ff', description: 'Hosts code repositories and managing team collaboration' },
         {skill:'Postman', color: '#ff6c37', description: 'Tool for testing, debugging and validating APIs during development' },
         {skill:'Figma', color: '#2dcd77', description: 'Design tool for creating UI/UX designs' },
+        {skill:'Docker', color: '#91a9ff', description: 'Containerization platform for building, deploying and running applications consistently' },
         {skill:'Markdown', color: '#52a1f7', description: 'Lightweight formating language for writing clean, structured documentation' },
         {skill:'Notion', color: '#ffffff', description: 'Workspace tool for documentation, planning and project management' },
       ]
@@ -53,6 +53,7 @@ export class SkillsComponent {
         {skill:'System Design', color: '#d0a1ff', description: 'Designing software systems, scalable architectures and component interactions' },
         {skill:'Networking', color: '#87acf5', description: 'Basic networking concepts like HTTP, client-server communication and protocols' },
         {skill:'Operating Systems', color: '#f7cb94', description: 'Core OS concepts like processes, threads, memory and scheduling basics' },
+        {skill:'Database Management', color: '#4599f5', description: 'Organising, storing, securing, and efficiently retrieving data from databases' },
         {skill:'OOPs', color: '#8cd674', description: 'Practical use of Object Oriented principles while implementing application logic' },
       ]
     },

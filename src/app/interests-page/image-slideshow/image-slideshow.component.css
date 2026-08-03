@@ -1,0 +1,31 @@
+.slideshow {
+    background-color: #171717; /* neutral-900 fallback while images load */
+}
+
+.slide {
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+    pointer-events: none;
+}
+
+.slide.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.dot {
+    background-color: rgba(255, 255, 255, 0.35);
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.dot:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.dot-active {
+    background-color: #ffffff;
+    width: 18px;
+    border-radius: 9999px;
+}

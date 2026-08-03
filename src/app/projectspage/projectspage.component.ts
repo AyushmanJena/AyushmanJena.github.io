@@ -26,25 +26,24 @@ export class ProjectspageComponent {
     },
     {
       title: "Dr Crop", description:"BCA Group Project. Predict crop diseases, recommend medicines and recommends crops based on soil components. Additional features like email OTP authentication and pdf report generation.",
-      toolsUsed: ['Spring Boot', 'Thymeleaf', 'MongoDB'], githubUrl:"https://github.com/AyushmanJena/drcrop", liveUrl: "", imageUrl:["/project-images/drcrop_1.png"]
+      toolsUsed: ['Spring Boot', 'Thymeleaf', 'MongoDB'], githubUrl:"https://github.com/AyushmanJena/drcrop", liveUrl: "", imageUrl: ["/project-images/drcrop_1.png","/project-images/drcrop_2.png", "/project-images/drcrop_3.png", "/project-images/drcrop_4.png", "/project-images/drcrop_5.png", "/project-images/drcrop_6.png", ]
     },
     {
       title: "Project Idea Generator", description:"Generate Project Idea based on a random roll and get project architecture and overview based on your tech stack and interests.",
-      toolsUsed: ['Spring Boot', 'Angular', 'Gemini API'], githubUrl:"https://github.com/AyushmanJena/project-idea-generator", liveUrl: "https://ayushmanjena.github.io/project-idea-generator/", imageUrl:["/project-images/projectidea_1.png"]
+      toolsUsed: ['Spring Boot', 'Angular', 'Gemini API'], githubUrl:"https://github.com/AyushmanJena/project-idea-generator", liveUrl: "https://ayushmanjena.github.io/project-idea-generator/", imageUrl:["/project-images/projectidea_1.png", "/project-images/projectidea_2.png"]
     },
     {
       title: "Infinite Tic Tac Toe", description:"Infinite moves tic tac toe game, with last moves being removed and more strategic gameplay. Additional bots or player modes.",
-      toolsUsed: ['Angular'], githubUrl:"https://github.com/AyushmanJena/tic-tac-toe", liveUrl: "https://ayushmanjena.github.io/tic-tac-toe/", imageUrl:["/project-images/tictactoe_1.png"]
+      toolsUsed: ['Angular'], githubUrl:"https://github.com/AyushmanJena/tic-tac-toe", liveUrl: "https://ayushmanjena.github.io/tic-tac-toe/", imageUrl:["/project-images/tictactoe_1.png", "/project-images/tictactoe_2.png"]
     },
     {
       title: "Youtube Comments Analyzer", description:"Analyze youtube videos or entire playlists from its comments and generates a summary if the content is worthwhile.",
-      toolsUsed: ['Spring Boot', 'Thymeleaf', 'Gemini API', 'Youtube API'], githubUrl:"https://github.com/AyushmanJena/Youtube-comments-analyzer", liveUrl: "", imageUrl:["/project-images/youtube_1.png"]
+      toolsUsed: ['Spring Boot', 'Thymeleaf', 'Gemini API', 'Youtube API'], githubUrl:"https://github.com/AyushmanJena/Youtube-comments-analyzer", liveUrl: "", imageUrl:["/project-images/youtube_1.png", "/project-images/youtube_2.png", "/project-images/youtube_3.png"]
     },
     {
       title: "Color Memory Game", description:"Recreate the color from memory as similar as possible.",
       toolsUsed: ['Angular'], githubUrl:"https://github.com/AyushmanJena/color-picker-game", liveUrl: "https://ayushmanjena.github.io/color-picker-game/", imageUrl:["/project-images/colormemory_1.png"]
     },
-
   ]
 
   openGallery(imageUrls: string[]) {

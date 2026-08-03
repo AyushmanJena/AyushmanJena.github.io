@@ -26,7 +26,7 @@ export class ProjectsComponent {
     },
     {
       title: "Dr Crop", description: "BCA Group Project. Predict crop diseases, recommend medicines and recommends crops based on soil components. Additional features like email OTP authentication and pdf report generation.",
-      toolsUsed: ['Spring Boot', 'Thymeleaf', 'MongoDB'], githubUrl: "https://github.com/AyushmanJena/drcrop", liveUrl: "", imageUrl: ["/project-images/drcrop_1.png"]
+      toolsUsed: ['Spring Boot', 'Thymeleaf', 'MongoDB'], githubUrl: "https://github.com/AyushmanJena/drcrop", liveUrl: "", imageUrl: ["/project-images/drcrop_1.png","/project-images/drcrop_2.png", "/project-images/drcrop_3.png", "/project-images/drcrop_4.png", "/project-images/drcrop_5.png", "/project-images/drcrop_6.png", ]
     },
 
   ];

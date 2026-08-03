@@ -1,0 +1,19 @@
+<div class="slideshow w-full h-full relative overflow-hidden rounded-2xl border border-neutral-800"
+     (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">
+ 
+    <img *ngFor="let img of images; let i = index"
+         [src]="img"
+         [alt]="'Slide ' + (i + 1)"
+         class="slide absolute inset-0 w-full h-full object-cover"
+         [class.active]="i === currentIndex" />
+ 
+    <div class="dots absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+        <button *ngFor="let img of images; let i = index"
+                (click)="goTo(i)"
+                class="dot w-2 h-2 rounded-full transition-colors"
+                [class.dot-active]="i === currentIndex">
+        </button>
+    </div>
+ 
+</div>
+ 

@@ -1,20 +1,24 @@
 <div class="skills-container flex flex-col justify-center items-center gap-12 mt-24 pt-16 pb-20">
   <p class="text-2xl font-bold text-white">FEATURED PROJECTS</p>
-  <div class="w-full text-white flex flex-col gap-16">
+  <div class="w-full text-white flex flex-col gap-8">
 
-    <div class="flex flex-row  flex-wrap-reverse lg:justify-between justify-center   px-3 "
+    <div
+      class="flex flex-row flex-wrap-reverse lg:justify-between justify-center items-stretch gap-6 bg-neutral-900 border border-neutral-800 hover:border-neutral-600 transition-colors duration-300 rounded-2xl p-3 shadow-lg shadow-black/20"
       *ngFor="let project of projectList">
-      <div class="md:w-[400px] px-2">
-        <p class="text-xl font-semibold my-3">{{project.title}}</p>
-        <p>{{project.description}}</p>
-        <div class=" flex flex-row gap-2 flex-wrap my-2">
-          <div class="text-xs bg-[#696969]/40 text-[#BFBFBF] py-0.25 pb-0.75 px-2 rounded-sm"
-            *ngFor="let tool of project.toolsUsed">
-            {{tool}}
+
+      <div class="flex-1 min-w-[260px] px-2 flex flex-col justify-between">
+        <div>
+          <p class="text-xl font-semibold my-3">{{project.title}}</p>
+          <p class="text-sm">{{project.description}}</p>
+          <div class="flex flex-row gap-2 flex-wrap my-2">
+            <div class="text-xs bg-[#696969]/40 text-[#BFBFBF] py-0.25 pb-0.75 px-2 rounded-sm"
+              *ngFor="let tool of project.toolsUsed">
+              {{tool}}
+            </div>
           </div>
         </div>
-        <div class="flex flex-row gap-3 my-5">
 
+        <div class="flex flex-row gap-3 my-5">
           <a class="action-button bg-[#aec9f1] text-black rounded-full px-6 py-1 flex justify-center items-center text-sm font-semibold"
             style="--btn-color: #aec9f1;" [href]="project.liveUrl" target="_blank" rel="noopener noreferrer"
             *ngIf="project.liveUrl">
@@ -25,11 +29,12 @@
             style="--btn-color: #dcccec;" [href]="project.githubUrl" target="_blank" rel="noopener noreferrer">
             <p class="mb-0.5">Github</p>
           </a>
-
         </div>
       </div>
-      <div class="w-[444px] h-full rounded-xl ">
-        <img [src]="project.imageUrl[0]" class="rounded-xl h-full cursor-pointer" alt="Project screenshot" (click)="openGallery(project.imageUrl)"/>
+
+      <div class="w-full sm:w-[300px] md:w-[444px] rounded-xl overflow-hidden">
+        <img [src]="project.imageUrl[0]" class="w-full h-full object-cover rounded-xl cursor-pointer"
+          alt="Project screenshot" (click)="openGallery(project.imageUrl)" />
       </div>
 
     </div>

@@ -1,0 +1,72 @@
+.marquee-wrapper {
+    -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+}
+ 
+.marquee-track {
+    animation: marquee-scroll 48s linear infinite;
+}
+ 
+.marquee-wrapper:hover .marquee-track {
+    animation-play-state: paused;
+}
+ 
+@keyframes marquee-scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+ 
+.capsule {
+    flex-shrink: 0;
+    white-space: nowrap;
+    background-color: #171717;
+    border: 2px solid #262626;
+    color: #d4d4d4;
+    padding: 0.5rem 1.25rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+}
+
+.playlist-button {
+  transition:
+    background-color 0.35s ease,
+    color 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+/* Hover effect */
+.playlist-button-yellow:hover {
+  background-color: color-mix(in srgb, #e8fc24 20%, transparent);
+  border-color: #e8fc24;
+  color: #e8fc24;
+
+  /* subtle glow */
+  box-shadow:
+    0 0 0 0 #e8fc24,
+    0 0 10px 2px color-mix(in srgb, #e8fc24 35%, transparent);
+}
+
+.playlist-button-blue:hover {
+  background-color: color-mix(in srgb, #3a80f1 20%, transparent);
+  border-color: #3a80f1;
+  color: #3a80f1;
+
+  /* subtle glow */
+  box-shadow:
+    0 0 0 0 #3a80f1,
+    0 0 10px 2px color-mix(in srgb, #3a80f1 35%, transparent);
+}
+
+.poster {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.poster:hover {
+    filter: grayscale(0%);
+}
