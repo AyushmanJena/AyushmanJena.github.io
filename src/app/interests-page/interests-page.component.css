@@ -41,25 +41,25 @@
 
 /* Hover effect */
 .playlist-button-yellow:hover {
-  background-color: color-mix(in srgb, #e8fc24 20%, transparent);
-  border-color: #e8fc24;
-  color: #e8fc24;
+  background-color: color-mix(in srgb, #f7e788 20%, transparent);
+  border-color: #f7e788;
+  color: #f7e788;
 
   /* subtle glow */
   box-shadow:
-    0 0 0 0 #e8fc24,
-    0 0 10px 2px color-mix(in srgb, #e8fc24 35%, transparent);
+    0 0 0 0 #f7e788,
+    0 0 10px 2px color-mix(in srgb, #f7e788 35%, transparent);
 }
 
 .playlist-button-blue:hover {
-  background-color: color-mix(in srgb, #3a80f1 20%, transparent);
-  border-color: #3a80f1;
-  color: #3a80f1;
+  background-color: color-mix(in srgb, #94bdff 20%, transparent);
+  border-color: #94bdff;
+  color: #94bdff;
 
   /* subtle glow */
   box-shadow:
-    0 0 0 0 #3a80f1,
-    0 0 10px 2px color-mix(in srgb, #3a80f1 35%, transparent);
+    0 0 0 0 #94bdff,
+    0 0 10px 2px color-mix(in srgb, #94bdff 35%, transparent);
 }
 
 .poster {

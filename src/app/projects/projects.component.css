@@ -3,7 +3,7 @@
   cursor: pointer;
 
   background-color: var(--btn-color);
-  color: #000000;
+  color: var(--sec-color);
 
   border: 2px solid transparent;
 
@@ -14,9 +14,11 @@
     box-shadow 0.35s ease;
 }
 
+
+
 /* Hover effect */
 .action-button:hover {
-  background-color: color-mix(in srgb, var(--btn-color) 20%, transparent);
+  background-color: var(--sec-color);
   border-color: var(--btn-color);
   color: var(--btn-color);
 
