@@ -1,16 +1,16 @@
 <div class="flex flex-col pb-28 w-full mx-auto">
 
     <div class="flex flex-col justify-center items-center gap-8 md:gap-12 w-full py-12 mt-12 md:mt-0 md:py-0 md:h-screen">
-        <p class="text-2xl font-bold text-white">WHO'S AYUSH?</p>
+        <p class="text-2xl font-bold text-white">WHAT ELSE?</p>
         <div class="w-full flex flex-col-reverse md:flex-row gap-8 justify-center items-center">
 
-            <div class="px-6 text-neutral-400 flex flex-col gap-2 w-full md:w-[50%]">
+            <div class="px-6 text-white flex flex-col gap-2 w-full md:w-[50%]">
                 <p>
                     Apart from learning and building cool stuff with code, you'll usually find me lifting at the gym,
                     getting lost in video games maybe alone, maybe with my friends,
-                    reading a book, or watching movies or anime. Watching YouTube and listening to music take up a huge chunk of my day.
+                    reading a book, or watching movies or anime. YouTube and Spotify are my coding partners.
                     I also enjoy art in all its forms be it software and UI designs, music, paintings, photography and
-                    everything in between. As they say <span class="font-style: italic text-neutral-300 font-semibold">"What is this Earth without art? It's just a rock".</span> 
+                    everything in between. As they say <span class="font-style: italic text-[#aec9f1] font-bold">"What is this Earth without art? It's just a rock".</span> 
                 </p>
                 <p>
                     Tech beyond software also fascinates me. Whether it's smartphones, laptops, mechanical keyboards or
@@ -18,7 +18,7 @@
                 </p>
             </div>
 
-            <div class="w-full md:w-[45%] p-2 md:p-0 h-[300px] md:h-full">
+            <div class="w-full md:w-[47%] p-2 md:p-0 h-[300px] md:h-full">
                 <app-image-slideshow [images]="aboutImages" [intervalMs]="5000"></app-image-slideshow>
             </div>
 
@@ -27,7 +27,7 @@
 
     <div class="flex flex-col justify-center items-center gap-12 w-full pt-12">
 
-        <p class="text-2xl font-bold text-white">What I'm Into</p>
+        <p class="text-2xl font-bold text-white">REAL INTERESTS</p>
 
         <div class="marquee-wrapper relative w-full overflow-hidden py-2">
             <div class="marquee-track flex gap-6 w-max">
@@ -39,8 +39,8 @@
     </div>
 
     <div class="flex flex-col justify-center items-center gap-12 w-full mt-32">
-    <p class="text-2xl font-bold text-white">Favourites</p>
-
+    <p class="text-2xl font-bold text-white">HARD PICKS</p>
+        <!-- Hard Picks  -->
     <div class="w-full text-white grid grid-cols-1 lg:grid-cols-2 gap-5">
 
         <!-- Left column -->
@@ -48,7 +48,7 @@
 
             <!-- Books -->
             <div
-                class="flex flex-col bg-neutral-900 border border-neutral-800 hover:border-neutral-600 rounded-2xl p-6 transition-colors">
+                class="flex flex-col w-full p-4 pb-5 rounded-2xl border border-white/10 relative overflow-hidden bg-gradient-to-br from-[#2e2e40]/40 via-[#272736]/40 to-[#201f2d]/40 backdrop-blur-xl overflow-visible">
                 <p class="text-neutral-200 font-medium text-lg mb-4 ml-2">Books</p>
                 <div class="grid grid-cols-3 gap-4 justify-items-center">
                     <div class="flex flex-col w-full max-w-28" *ngFor="let item of books">
@@ -61,7 +61,7 @@
 
             <!-- Music -->
             <div
-                class="flex flex-col bg-neutral-900 border border-neutral-800 hover:border-neutral-600 rounded-2xl p-6 transition-colors">
+                class="flex flex-col w-full p-4 pb-5 rounded-2xl border border-white/10 relative overflow-hidden bg-gradient-to-br from-[#2e2e40]/40 via-[#272736]/40 to-[#201f2d]/40 backdrop-blur-xl overflow-visible">
                 <p class="text-neutral-200 font-medium text-lg mb-4 ml-2">Music</p>
 
                 <div class="flex flex-row flex-wrap items-center gap-4">
@@ -87,7 +87,7 @@
 
         <!-- Right column: Movies -->
         <div
-            class="flex flex-col bg-neutral-900 border border-neutral-800 hover:border-neutral-600 duration-300 rounded-2xl p-6 shadow-lg shadow-black/20">
+            class="flex flex-col w-full p-4 pb-5 rounded-2xl border border-white/10 relative overflow-hidden bg-gradient-to-br from-[#2e2e40]/40 via-[#272736]/40 to-[#201f2d]/40 backdrop-blur-xl overflow-visible">
             <p class="text-neutral-200 font-medium text-lg mb-4 ml-2">Movies</p>
             <div class="grid grid-cols-3 gap-4 justify-items-center">
                 <div class="flex flex-col w-full pb-8 max-w-28" *ngFor="let item of movies">
@@ -97,9 +97,11 @@
                 </div>
             </div>
         </div>
-
+        
     </div>
+    
 
+    <!-- <div class="text-white">Send a DM &#64;not_ayush24</div> -->
 </div>
 
 

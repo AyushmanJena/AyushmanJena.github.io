@@ -1,23 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Reenie+Beanie&family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
 
-.kalam-light {
-  font-family: "Kalam", cursive;
-  font-weight: 300;
-  font-style: normal;
+:root {
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+  --font-pill: 'JetBrains Mono', monospace;
+  --font-handwritten: 'Reenie Beanie', cursive;
+  --font-id-card: 'Caveat', cursive;
 }
 
-.kalam-regular {
-  font-family: "Kalam", cursive;
+body {
+  font-family: var(--font-body);
   font-weight: 400;
-  font-style: normal;
+  line-height: 1.6;
 }
 
-.kalam-bold {
-  font-family: "Kalam", cursive;
-  font-weight: 700;
-  font-style: normal;
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+button,
+nav {
+  font-family: var(--font-body);
+}
+
+.skill-pill,
+.tech-badge,
+.project-tag {
+  font-family: var(--font-pill);
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.handwritten {
+  font-family: var(--font-handwritten);
+  font-weight: 300;
+  letter-spacing: normal;
+}
+
+.id-card-text {
+  font-family: var(--font-id-card);
+  font-weight: 500;
+  letter-spacing: normal;
 }
 
 

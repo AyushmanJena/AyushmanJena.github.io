@@ -3,7 +3,7 @@
   <div class="w-full text-white flex flex-col gap-8">
 
     <div
-      class="flex flex-row flex-wrap-reverse lg:justify-between justify-center items-stretch gap-6 bg-neutral-900 border border-neutral-800 hover:border-neutral-600 transition-colors duration-300 rounded-2xl p-3 shadow-lg shadow-black/20"
+      class="flex flex-row flex-wrap-reverse lg:justify-between justify-center items-stretch gap-6 p-3 mb-3"
       *ngFor="let project of projectList">
 
       <div class="flex-1 min-w-[260px] px-2 flex flex-col justify-between">
@@ -11,7 +11,7 @@
           <p class="text-xl font-semibold my-3">{{project.title}}</p>
           <p class="text-sm">{{project.description}}</p>
           <div class="flex flex-row gap-2 flex-wrap my-2">
-            <div class="text-xs bg-[#696969]/40 text-[#BFBFBF] py-0.25 pb-0.75 px-4 rounded-full"
+            <div class="project-tag bg-[#696969]/40 text-[#BFBFBF] py-0.25 px-4 rounded-full"
               *ngFor="let tool of project.toolsUsed">
               {{tool}}
             </div>
@@ -22,12 +22,12 @@
           <a class="action-button rounded-full px-6 py-1 flex justify-center items-center text-sm font-semibold"
             style="--btn-color: #aec9f1; --sec-color: #1b3253;" [href]="project.liveUrl" target="_blank" rel="noopener noreferrer"
             *ngIf="project.liveUrl">
-            <p class="mb-0.5">Live</p>
+            <p class="">Live</p>
           </a>
 
           <a class="action-button rounded-full px-6 py-1 flex justify-center items-center text-sm font-semibold"
             style="--btn-color: #dcccec; --sec-color: #4e2b71;" [href]="project.githubUrl" target="_blank" rel="noopener noreferrer">
-            <p class="mb-0.5">Github</p>
+            <p class="">Github</p>
           </a>
         </div>
       </div>

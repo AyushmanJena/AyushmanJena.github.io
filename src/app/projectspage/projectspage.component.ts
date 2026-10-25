@@ -17,7 +17,7 @@ export class ProjectspageComponent {
 
   projectList: ProjectData[] = [
     {
-      title: "Elytra Notes", description:"Read notes directly fetched from github repositories in your browser, with features like dark mode and markdown support.",
+      title: "Elytra Notes", description:"Read notes directly fetched from github repositories in your browser, with features like dark mode, images and markdown support.",
       toolsUsed: ['Angular', 'Github API', 'TailwindCSS'], githubUrl:"https://github.com/AyushmanJena/elytra-notes", liveUrl: "https://ayushmanjena.github.io/elytra-notes/", imageUrl:["/project-images/elytra_1.png", "/project-images/elytra_2.png", "/project-images/elytra_3.png", "/project-images/elytra_4.png", ]
     },
     {

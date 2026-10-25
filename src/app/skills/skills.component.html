@@ -1,12 +1,12 @@
 <div class="skills-container flex flex-col justify-center items-center pt-16">
-  <p class="text-2xl font-bold text-white">SKILLS</p>
+  <p class="text-2xl font-bold text-white">TECHNICAL SKILLS</p>
 
   <div class="cards-container flex flex-row flex-wrap justify-center gap-6 md:gap-14 gap-y-8 mt-14">
 
     <div *ngFor="let card of skillcards" 
   class="w-full max-w-[300px] md:max-w-[400px] p-4 pb-5 rounded-2xl 
   border border-white/10 relative overflow-hidden
-  bg-gradient-to-br from-[#2e2e40]/40 via-[#272736]/40 to-[#201f2d]/40 backdrop-blur-xl">
+  bg-gradient-to-br from-[#2e2e40]/40 via-[#272736]/40 to-[#201f2d]/40 backdrop-blur-xl overflow-visible">
 
   <p class="mb-3 ml-2 font-bold text-[18px] text-white">
     {{ card.title }}
@@ -15,12 +15,12 @@
   <div class="flex flex-row flex-wrap gap-3 font-semibold text-[14px]">
     <div
       *ngFor="let skill of card.skills"
-      class="no-select relative group skill-chip px-6 py-1 text-sm md:text-base rounded-full border-2 border-[#3b3b3b]/80 text-white
+      class="no-select relative group skill-chip skill-pill px-6 py-1 text-sm md:text-base rounded-full border-2 border-[#3b3b3b]/80 text-white
     bg-[#0A0A0A]/50 backdrop-blur-sm transition-all duration-300 ease-out overflow-visible cursor-default" [style.--skill-color]="skill.color">
       {{ skill.skill }}
       <!-- Tooltip -->
       <div class="absolute left-1/2 -top-2 -translate-x-1/2 -translate-y-full opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100
-        transition-all duration-200 ease-out pointer-events-none z-50">
+        transition-all duration-200 ease-out pointer-events-none z-[100]">
 
         <div class="px-3 py-1.5 text-xs font-medium rounded-lg text-white bg-[#111111]/90 backdrop-blur-md border border-white/10 shadow-lg
           w-[100px] md:w-[300px] text-center break-words leading-relaxed">

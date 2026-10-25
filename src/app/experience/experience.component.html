@@ -1,42 +1,38 @@
-<section class="relative flex flex-col items-center py-16 px-4">
+<section class="experience-section px-4 py-16 text-white sm:px-8" aria-labelledby="experience-title">
+  <div class="experience-container mx-auto w-full max-w-4xl">
+    <h2 id="experience-title" class="section-title">PROFESSIONAL EXPERIENCE</h2>
 
-  <!-- Vertical line -->
-  <div class="absolute top-0 bottom-0 left-1/2 -translate-x-1/2 w-px bg-gray-600"></div>
+    <div class="experience-list mt-12">
+      <article class="experience-entry" *ngFor="let experience of experiences">
+        <div
+          class="experience-marker"
+          aria-hidden="true"
+          [style.--experience-color]="experience.color"
+        ></div>
 
-  <div
-    *ngFor="let step of steps; let i = index"
-    class="relative flex w-full max-w-5xl mb-20 items-center"
-    [class.flex-row-reverse]="i % 2 !== 0"
-  >
+        <div class="experience-content">
+          <div class="experience-heading">
+            <div>
+              <h3>{{ experience.title }}</h3>
+              <p class="experience-company font-semibold" [style.color]="experience.color">
+                {{ experience.company }}
+              </p>
+            </div>
+            <span
+              class="experience-period"
+              [style.--experience-color]="experience.color"
+            >
+              {{ experience.period }}
+            </span>
+          </div>
 
-    <!-- Card -->
-    <div class="w-5/12 rounded-xl border border-gray-700 bg-gray-900 p-6"
-         [class.mr-auto]="i % 2 === 0"
-         [class.ml-auto]="i % 2 !== 0">
-      <div class="flex items-center gap-3 mb-3">
-        <span class="text-xs font-semibold tracking-widest text-blue-400 uppercase">Step {{ i + 1 }}</span>
-        <h3 class="text-lg font-bold text-white">{{ step.title }}</h3>
-      </div>
-      <p class="text-sm text-gray-400 mb-4">{{ step.description }}</p>
-      <div class="flex flex-wrap gap-2">
-        <span
-          *ngFor="let tag of step.tags"
-          class="flex items-center gap-1.5 px-3 py-1.5 text-xs text-gray-300 border border-gray-600 rounded-md bg-gray-800"
-        >
-          <span>{{ tag.icon }}</span>
-          <span>{{ tag.label }}</span>
-        </span>
-      </div>
+          <ul>
+            <li *ngFor="let responsibility of experience.responsibilities">
+              {{ responsibility }}
+            </li>
+          </ul>
+        </div>
+      </article>
     </div>
-
-    <!-- Center node -->
-    <div class="absolute left-1/2 -translate-x-1/2 w-10 h-10 rounded-full border border-gray-600 bg-gray-800 flex items-center justify-center z-10">
-      <span class="text-gray-400 text-base">{{ step.icon }}</span>
-    </div>
-
-    <!-- Empty spacer for opposite side -->
-    <div class="w-5/12"></div>
-
   </div>
-
 </section>

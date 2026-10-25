@@ -11,14 +11,12 @@ import { ImageSlideshowComponent } from "./image-slideshow/image-slideshow.compo
 export class InterestsPageComponent {
 
   aboutImages: string[] = [
-    '/beyond-code-images/1.png', '/beyond-code-images/2.jpg', '/beyond-code-images/3.jpg', '/beyond-code-images/4.jpg', 
-    '/beyond-code-images/5.jpg', '/beyond-code-images/6.jpg', '/beyond-code-images/7.jpg', '/beyond-code-images/8.png', 
-    '/beyond-code-images/9.jpg', '/beyond-code-images/10.jpg', '/beyond-code-images/11.jpg', '/beyond-code-images/12.jpg', 
-    '/beyond-code-images/13.jpg', 
+    '/beyond-code-images/1.png', '/beyond-code-images/2.jpg', '/beyond-code-images/3.jpg', '/beyond-code-images/4.png', 
+    '/beyond-code-images/5.jpg', '/beyond-code-images/6.jpg', '/beyond-code-images/7.jpg', '/beyond-code-images/8.jpg',  
   ];
 
   marqueeItems: string[] = [
-    'Space', 'Smartphones', 'Video Games', 'Productivity', 'Minecraft', 'Valorant', 'Emulation', 'Side Quests', 'Self Development', 'Cinema',
+    'Space', 'Smartphones', 'Video Games', 'Music', 'Productivity', 'Minecraft', 'Valorant', 'Emulation', 'Side Quests', 'Self Improvement', 'Cinema',
     'Hip Hop', 'Anime', 'Science Fiction', 'Marvel', 'Philosophy', 'Tech Gadgets', 'Mechanical Keyboards', 'Art', 'UI Design', 'Gym', 'Books',
   ];
 
